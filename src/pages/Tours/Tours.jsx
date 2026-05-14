@@ -8,7 +8,7 @@ const Tours = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [priceRange, setPriceRange] = useState([0, 50000]);
+  const [priceRange, setPriceRange] = useState([0, 60000]);
   const [sortBy, setSortBy] = useState("featured");
 
   useEffect(() => {

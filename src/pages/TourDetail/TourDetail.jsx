@@ -193,7 +193,7 @@ const TourDetail = () => {
             </div>
 
             {/* Pricing */}
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-2xl">
+            <div className="bg-linear-to-r from-blue-50 to-purple-50 p-6 rounded-2xl">
               <div className="flex items-center justify-between mb-4">
                 <div>
                   <p className="text-gray-600">Starting from</p>
@@ -203,7 +203,7 @@ const TourDetail = () => {
                     </span>
                     {tour.originalPrice && (
                       <span className="text-lg text-gray-500 line-through">
-                        EGP 26000
+                        EGP {tour.originalPrice}
                       </span>
                     )}
                   </div>
@@ -228,7 +228,7 @@ const TourDetail = () => {
             <ul className="space-y-3">
               {tour.highlights.map((highlight, index) => (
                 <li key={index} className="flex items-start">
-                  <FaCheck className="text-green-500 mt-1 mr-3 flex-shrink-0" />
+                  <FaCheck className="text-green-500 mt-1 mr-3 shrink-0" />
                   <span className="text-gray-700">{highlight}</span>
                 </li>
               ))}
@@ -242,7 +242,7 @@ const TourDetail = () => {
             <ul className="space-y-3">
               {tour.includes.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <FaCheck className="text-green-500 mt-1 mr-3 flex-shrink-0" />
+                  <FaCheck className="text-green-500 mt-1 mr-3 shrink-0" />
                   <span className="text-gray-700">{item}</span>
                 </li>
               ))}
@@ -280,7 +280,8 @@ const TourDetail = () => {
                 Booking Submitted Successfully!
               </h3>
               <p className="text-green-700">
-                Thank you for your booking request. We'll contact you soon with confirmation details.
+                Thank you for your booking request. We'll contact you soon with
+                confirmation details.
               </p>
             </div>
           </div>

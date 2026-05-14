@@ -7,9 +7,9 @@ import {
   FaPhone,
   FaEnvelope,
   FaLinkedin,
-  FaGithub
+  FaGithub,
 } from "react-icons/fa";
-import devPhoto from "../../assets/ad7b256d-2ccf-405d-8b03-7eb4a55d2e01.jpg"
+import devPhoto from "../../assets/ad7b256d-2ccf-405d-8b03-7eb4a55d2e01.jpg";
 
 const About = () => {
   const stats = [
@@ -60,7 +60,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white">
+      <div className="bg-linear-to-br from-blue-600 via-purple-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -128,7 +128,7 @@ const About = () => {
                 as our travelers themselves.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-8 rounded-2xl">
+            <div className="bg-linear-to-br from-blue-100 to-purple-100 p-8 rounded-2xl">
               <div className="text-center">
                 <div className="text-6xl mb-4">🌍</div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -208,8 +208,16 @@ const About = () => {
                   </p>
                   <p className="text-gray-600 leading-relaxed">{member.bio}</p>
                   <div className="flex justify-between">
-                    <p className="text-blue-400 hover:text-blue-600"><a href={member.linkedIn} target="_blank">LinkedIn</a></p>
-                    <p className="text-red-400 hover:text-red-600"><a href={member.gitHub} target="_blank">Github</a></p>
+                    <p className="text-blue-400 hover:text-blue-600">
+                      <a href={member.linkedIn} target="_blank">
+                        LinkedIn
+                      </a>
+                    </p>
+                    <p className="text-red-400 hover:text-red-600">
+                      <a href={member.gitHub} target="_blank">
+                        Github
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -219,7 +227,7 @@ const About = () => {
       </div>
 
       {/* Contact CTA */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+      <div className="bg-linear-to-r from-blue-600 to-purple-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Start Your Journey?

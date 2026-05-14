@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaMapMarkerAlt } from "react-icons/fa";
-import logoImg from "../../assets/Gemini_Generated_Image_hrrbx5hrrbx5hrrb-removebg-preview.png";
+import logoImg from "../../assets/remove-background.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,14 +17,14 @@ const NavBar = () => {
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link
             to="/"
             className="flex items-center space-x-2"
             onClick={closeMenu}
           >
-            <img src={logoImg} alt="logo image" className="w-40" />
+            <img src={logoImg} alt="logo image" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

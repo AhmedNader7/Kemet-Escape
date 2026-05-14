@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logoImg from "../../assets/Gemini_Generated_Image_hrrbx5hrrbx5hrrb-removebg-preview.png"
 import {
   FaFacebook,
   FaTwitter,
@@ -9,6 +8,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import logoImg from "../../assets/remove-background.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src={logoImg} alt="Logo Image" className="w-50"/>
+              <img src={logoImg} alt="Logo Image" className="w-50" />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               A timeless voyage crafted by Kemet Escape
@@ -110,17 +110,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <FaMapMarkerAlt className="text-blue-400 flex-shrink-0" />
+                <FaMapMarkerAlt className="text-blue-400 shrink-0" />
                 <span className="text-gray-300 text-sm">
                   123 Travel Street, Alexandrya, Egypt
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <FaPhone className="text-blue-400 flex-shrink-0" />
+                <FaPhone className="text-blue-400 shrink-0" />
                 <span className="text-gray-300 text-sm">+20 1558858776</span>
               </div>
               <div className="flex items-center space-x-3">
-                <FaEnvelope className="text-blue-400 flex-shrink-0" />
+                <FaEnvelope className="text-blue-400 shrink-0" />
                 <span className="text-gray-300 text-sm">
                   info@kemetescape-eg.com
                 </span>

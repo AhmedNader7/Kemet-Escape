@@ -5,21 +5,25 @@ import {
   FaCalendarAlt,
   FaUsers,
 } from "react-icons/fa";
+import heroImg from "../../assets/Untitled-1.png";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 text-white overflow-hidden">
+    <section
+      className="relative bg-cover bg-center text-white overflow-hidden"
+      style={{ backgroundImage: `url(${heroImg})` }}
+    >
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-blue-900/70 via-blue-700/50 to-blue-900/70"></div>
       <div className="absolute inset-0 opacity-20">
-        <div className="w-full h-full bg-gradient-to-br from-transparent via-white to-transparent opacity-10"></div>
+        <div className="w-full h-full bg-linear-to-br from-transparent via-white to-transparent opacity-10"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Discover Your
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
+            <span className="block text-transparent bg-clip-text bg-linear-to-r from-yellow-400 to-orange-500">
               Dream Destination
             </span>
           </h1>
@@ -28,8 +32,6 @@ const Hero = () => {
             programs. From exotic beaches to majestic mountains, your adventure
             awaits.
           </p>
-
-          
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -1,70 +1,69 @@
-import cardImg from "../assets/Gemini_Generated_Image_ppbrqgppbrqgppbr.png"
+import tourImg from "../assets/Untitled-1.png";
 
 export const mockTours = [
   {
     id: 1,
-    title: "Nile Palace Cruise – Aswan to Luxor",
-    destination: "Aswan to Luxor, Egypt",
-    duration: "4 Days / 3 Nights",
-    price: 22000,
-    originalPrice: 22000,
+    title: "From the Pyramids to Petra",
+    destination: "Cairo, Egypt to Petra, Jordan",
+    duration: "5 Days / 4 Nights",
+    price: 52500,
     rating: 4.9,
     reviews: 0,
-    image:
-      cardImg,
+    image: tourImg,
     description:
-      "A timeless voyage crafted by Kemet Escape. Step aboard a river that has carried the stories of pharaohs for thousands of years. The Nile Palace Cruise invites you to drift between temples, legends, and golden horizons as you journey from Aswan to Luxor—where every sunrise feels like it's been waiting just for you.",
+      "A 5-day luxurious historical escape connecting the wonders of Egypt and Jordan. Experience the majestic Pyramids, cruise the Nile, and explore the rose-red city of Petra.",
     highlights: [
-      "High Dam Visit",
-      "Philae Temple",
-      "Kom Ombo Temple",
-      "Temple of Edfu",
-      "Luxor Temple",
-      "Karnak Temple",
-      "Valley of the Kings",
-      "Temple of Hatshepsut",
-      "Colossi of Memnon",
+      "Giza Pyramids & Sphinx",
+      "Nile Cruise Dinner",
+      "Egyptian Museum & Khan el-Khalili",
+      "The Rose City of Petra",
+      "Dead Sea Floating Experience",
     ],
     includes: [
-      "Nile Palace Cruise (4 days / 3 nights) – full board",
-      "Sleeping train from Cairo to Aswan",
-      "Private transfers throughout",
-      "All guided sightseeing with an Egyptologist (Arabic / English)",
+      "5-Star Hotel Accommodation (2 nights Cairo, 2 nights Jordan)",
+      "International Flight (Cairo to Amman)",
+      "Private Transfers & Tourist Coaches",
+      "All guided sightseeing with professionals",
       "Entrance fees to all listed sites",
-      "24/7 trip assistance",
-      "QR code containing your complete digital itinerary",
     ],
     category: "Historical",
     difficulty: "Easy",
-    maxGroupSize: 20,
+    maxGroupSize: 50,
     languages: ["English", "Arabic"],
     departureCity: "Cairo",
     bestTime: "October - April",
+    audience: "Families & Tourists",
     currency: "EGP",
     itinerary: [
       {
         day: 1,
-        title: "Aswan's Warm Welcome",
+        title: "Cairo Arrival & Pyramids",
         description:
-          "Your journey begins the moment your train pulls into Aswan. A private transfer whisks you to the cruise, where the Nile glimmers outside your cabin window. A hearty lunch awaits on deck. Visit the powerful High Dam. Wander through the mystical Philae Temple, reborn on its island. Dinner on board. Overnight in Aswan, lulled to sleep by sleep by the river's rhythm.",
+          "Airport pickup, Giza Pyramids, Camel ride, Traditional lunch, Nile Cruise Dinner.",
       },
       {
         day: 2,
-        title: "Kom Ombo & The Night of Colors",
+        title: "Historic Cairo",
         description:
-          "The day opens softly with breakfast on deck. Optional morning excursion for those craving more discovery. Sail toward Kom Ombo, where twin gods share a single temple. Explore the haunting beauty of Kom Ombo Temple. Drift onward to Edfu as the sky melts into orange. Dinner followed by the beloved Galabya Party—a night where tradition meets laughter. Overnight in Edfu.",
+          "Egyptian Museum, Khan el-Khalili tour, Oriental lunch, Free time.",
       },
       {
         day: 3,
-        title: "Temples, Bridges, and the Gates of Thebes",
+        title: "Journey to Jordan",
         description:
-          "Morning light spills through your window as breakfast is served. Visit the majestic Temple of Edfu, still echoing with the footsteps of ancient priests. Sail north toward Esna, passing beneath the low Esna Bridge. Continue to Luxor—ancient Thebes, city of immortal kings. Explore the illuminated corridors of Luxor Temple. Wander through the vast, awe-inspiring pillars of Karnak, a forest of stone unlike anything else on earth. Overnight in Luxor.",
+          "Flight from Cairo to Amman, Transfer to hotel, Evening Amman tour.",
       },
       {
         day: 4,
-        title: "The Kingdom of the Afterlife",
+        title: "The Rose City",
         description:
-          "Your final morning begins with breakfast before check-out. Cross to the West Bank, where Egypt's greatest secrets rest. Stand before the elegant Temple of Hatshepsut, carved into the cliffs. Journey through the Valley of the Kings, home to the tombs of pharaohs. Visit the eternal guardians—the Colossi of Memnon. Private transfer to Luxor train station for your departure.",
+          "Full day exploring Petra, Lunch inside the site, Photography tour.",
+      },
+      {
+        day: 5,
+        title: "Dead Sea & Departure",
+        description:
+          "Floating in the Dead Sea, Relaxation at the resort, Airport transfer for departure.",
       },
     ],
   },

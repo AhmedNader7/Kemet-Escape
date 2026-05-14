@@ -104,14 +104,14 @@ const SearchBar = ({
               {/* Price Range Filter */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-3">
-                  Price Range: ${priceRange[0]} - ${priceRange[1]}
+                  Price Range: EGP {priceRange[0]} - EGP {priceRange[1]}
                 </label>
                 <div className="px-2">
                   <input
                     type="range"
                     min="0"
-                    max="4000"
-                    step="100"
+                    max="60000"
+                    step="500"
                     value={priceRange[0]}
                     onChange={(e) =>
                       onPriceChange([parseInt(e.target.value), priceRange[1]])
@@ -121,8 +121,8 @@ const SearchBar = ({
                   <input
                     type="range"
                     min="0"
-                    max="4000"
-                    step="100"
+                    max="60000"
+                    step="500"
                     value={priceRange[1]}
                     onChange={(e) =>
                       onPriceChange([priceRange[0], parseInt(e.target.value)])
@@ -139,22 +139,22 @@ const SearchBar = ({
                 </label>
                 <div className="flex flex-wrap gap-2">
                   <button
-                    onClick={() => onPriceChange([0, 1000])}
+                    onClick={() => onPriceChange([0, 20000])}
                     className="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 transition-colors"
                   >
-                    Under $1000
+                    Under 20k
                   </button>
                   <button
-                    onClick={() => onPriceChange([1000, 2000])}
+                    onClick={() => onPriceChange([20000, 40000])}
                     className="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 transition-colors"
                   >
-                    $1000 - $2000
+                    20k - 40k
                   </button>
                   <button
-                    onClick={() => onPriceChange([2000, 4000])}
+                    onClick={() => onPriceChange([40000, 60000])}
                     className="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 transition-colors"
                   >
-                    $2000+
+                    40k+
                   </button>
                 </div>
               </div>
@@ -167,7 +167,7 @@ const SearchBar = ({
                   setLocalSearchTerm("");
                   onSearch("");
                   onCategoryChange("All");
-                  onPriceChange([0, 4000]);
+                  onPriceChange([0, 60000]);
                   onSortChange("featured");
                 }}
                 className="px-6 py-2 text-gray-600 hover:text-gray-800 transition-colors"

@@ -42,7 +42,7 @@ const TourCard = ({ tour }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 transition-transform">
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105">
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <img
@@ -58,7 +58,7 @@ const TourCard = ({ tour }) => {
         {/* Category Badge */}
         <div
           className={`absolute top-3 left-3 px-3 py-1 rounded-full text-white text-xs font-semibold ${getCategoryColor(
-            category
+            category,
           )}`}
         >
           {category}
@@ -140,7 +140,7 @@ const TourCard = ({ tour }) => {
               {originalPrice && (
                 <span className="text-sm text-gray-500 line-through ml-2">
                   {getCurrencySymbol(currency)}
-                  26000
+                  {originalPrice}
                 </span>
               )}
             </div>
